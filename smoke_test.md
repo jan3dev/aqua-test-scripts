@@ -16,6 +16,7 @@ to quickly identify any major issues or showstoppers early in the testing proces
 ## SEND
 ### QRSCANNER
 - [ ] Test all assets
+- [ ] Test bad addresses
 - [ ] Bip21
     - [ ] Liquid non-LBTC with assetId goes to proper asset
     - [ ] BTC with Lightning fallback goes to Lightning Send
