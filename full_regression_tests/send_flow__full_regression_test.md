@@ -23,8 +23,11 @@ TODO: This was copied from the smoke test to start the folder - needs to be fill
 
 ### LIGHTNING
 - [ ] Send various wallets
-- [ ] Send Lightning Address
+- [ ] Send various Lightning Address
 - [ ] Send Aqua-to-Aqua (converts to LBTC send)
+    - [ ] Verify when scan an Aqua-to-Aqua LN QR that it scans successfully and populates a liquid address and an amount in send flow
+    - [ ] Verify sending to address
+    - [ ] On receive side, there is no success screen (https://github.com/jan3dev/aqua-dev/issues/755), but verify receive
 - [ ] Verify shows up in Tx Detail
 
 ### USDT
