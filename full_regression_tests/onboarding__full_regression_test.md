@@ -20,7 +20,7 @@ click on 4 wrong words and confirm and error screen is shown
 
 click retry and enter the 4 correct words and confirm that the user is taking to the home screen
 
-### resotore wallet
+### restore wallet
 Deposit a small amount of money into the wallet and turn on dark mode and delete the wallet. 
 
 Restart app and go through the restore workflow
