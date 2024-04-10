@@ -1,5 +1,15 @@
 ## RECEIVE FLOW
 
+### ASSETS
+- [ ] Verify the default assets plus all assets added in Settings > Managed Assets are display in Receive Asset Grid
+
+
+### AMOUNT ENTRY - All assets
+- [ ] Verify text entry is restricted to numbers and a single decimal
+- [ ] Verify decimals are capped at the precision of the asset (most have a precision of 8, so should be capped at 8 decimals)
+    - Bug: We have a bug on this: https://github.com/jan3dev/aqua-dev/issues/770
+
+
 ### BITCOIN
 - [ ] Displays valid, unused Bitcoin address in text that's copyable
 - [ ] Displays same address in QR code
