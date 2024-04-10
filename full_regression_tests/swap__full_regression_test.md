@@ -25,4 +25,5 @@ USDT to LBTC
 - some amount lower than swap all
 
 Remove USDT from the asset list and confirm that it does not show in the swap list
+
 Confirm that swap combinations that are now allowed gives error (BTC<>USDT)
