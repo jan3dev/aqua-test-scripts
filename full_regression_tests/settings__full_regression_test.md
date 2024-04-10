@@ -32,6 +32,7 @@ turn off biometric and confirm that it executes the biometric auth and and is en
 - go to the delete wallet and confirm that it does not ask for biometric auth
 - go to the view seed words option and confirm that it does not ask for biometric auth
 
+enable biometric, kill the app and reopen, when biometric auth comes up, intentionally fail it and autheticate via phone password/pin
 
 ### dark mode
 turn on an off dark mode and confirm that color changes
