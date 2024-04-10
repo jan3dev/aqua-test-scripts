@@ -1,25 +1,50 @@
 TODO: This was copied from the smoke test to start the folder - needs to be filled out with full functionality.
 
 ## SEND
-### QRSCANNER
-- [ ] Test all assets
+### QRSCANNER + TEXT FIELD ENTRY
+- [ ] Test scanning valid QR codes for all available assets
+    - [ ] Bitcoin
+      - [ ] TODO: Add all variations of Bitcoin addresses
+    - [ ] Liquid
+      - [ ] TODO: Add all variations of Liquid addresses, confidential and unconfidential
+    - [ ] Lighting Invoice
+      - [ ] TODO: Add all variations of lightning invoices
+      - [ ] Error State: Expired invoices show prompt
+      - [ ] Error State: No amount invoices show prompt
+
 - [ ] Bip21
-    - [ ] Liquid non-LBTC with assetId goes to proper asset
-    - [ ] BTC with Lightning fallback goes to Lightning Send
+    - [ ] Liquid address that's not LBTC and has a valid assetId goes to proper asset (eg, USDt with assetId goes to Send USDt asset page)
+    - [ ] BTC with Lightning fallback goes to Lightning Send (will have option to choose lightning or btc in the future)
+
 - [ ] Lightning Address
+    - [ ] Test from a variety of servers, large and small. A list to start: Blink, Coinos, Alby, Strike, Wallet of Satoshi
+    - [ ] When the lightning address is entered on the Send Address Screen, the Continue button should enable once text passing a basic email regex is entered. This has not entered the lightning address resolution flow yet, the initial validation is just a basic email regex.
+
 - [ ] LNURL
+
+The above are general address validation steps for the QR scanner on any screen. 
+Below are steps to validate scanning QRs on asset specific screens
+
+- [ ] Compatible/Incompatible Assets
+    - [ ] If a QR or text address input is entered on an asset specific screen, we show an invalid asset if the asset doesn't match.
+    - [ ] There are exceptions where lightning and lbtc are considered "compatible" assets and should not show an error
+    - [ ] USDt Liquid, Tron and Ethereum addresses are all "compatible" and should switch to that version of a USDt send.
+     
+ 
 ### BITCOIN
 - [ ] Regular Send
-- [ ] Verify fee rates show and change when tapped
+- [ ] Verify fee rates show and change when tapped - also verify this is the actual rate in the tx
 - [ ] Send All
 - [ ] Fiat-denominated
 - [ ] Verify tx shows up in tx history
+- [ ] Error State: Verify amount over balance shows error
 
 ### LBTC
 - [ ] Regular Send
 - [ ] Send All
 - [ ] Fiat-denominated
 - [ ] Verify tx shows up in tx history
+- [ ] Error State: Verify amount over balance shows error
 
 ### LIGHTNING
 - [ ] Send various wallets
@@ -31,13 +56,24 @@ TODO: This was copied from the smoke test to start the folder - needs to be fill
 - [ ] Verify shows up in Tx Detail
 
 ### USDT
-- [ ] Regular Send
+- [ ] Regular Send - Liquid USDt
     - [ ] NOTE: Redeposits don’t show up in tx history due to gdk
 - [ ] Sideshift
     - [ ] Verify Sideshift order shows up in order history (currently in history button on USDT tx history screen), even if pending
     - [ ] Verify Send (no testnet unfortunately)
+    - [ ] Error State: If not in an allowed country, verify error message (US is not an allowed country)
 
-### OTHER
+### OTHER ASSETS (EURx, JPY, etc)
 - [ ] Regular Send on any other asset
 - [ ] Send All
-- [ ] Fiat-denominated
+- [ ] Verify shows up in Tx Detail
+- [ ] Error State: Verify amount over balance shows error
+
+### REVIEW SCREEN - ALL ASSETS
+- [ ] Verify amount and address are correct
+- [ ] Verify network fees are correct (cross check with blockchain explorer)
+- [ ] Sideshift: Verify shift id and fee display
+- [ ] Boltz: Verify fee displays
+
+### SUCCESS SCREEN - ALL ASSETS
+- [ ] Verify amount, network fee, tx id, time in utc, data
