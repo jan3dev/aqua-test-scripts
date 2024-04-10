@@ -15,6 +15,8 @@ TODO: This was copied from the smoke test to start the folder - needs to be fill
 - [ ] Bip21
     - [ ] Liquid address that's not LBTC and has a valid assetId goes to proper asset (eg, USDt with assetId goes to Send USDt asset page)
     - [ ] BTC with Lightning fallback goes to Lightning Send (will have option to choose lightning or btc in the future)
+    - [ ] Scan bip21 with lightning fallback but user has 0 second layer balance, should resolve to BTC automatically
+        - This is a bug currently: https://github.com/jan3dev/aqua-dev/issues/773
 
 - [ ] Lightning Address
     - [ ] Test from a variety of servers, large and small. A list to start: Blink, Coinos, Alby, Strike, Wallet of Satoshi
