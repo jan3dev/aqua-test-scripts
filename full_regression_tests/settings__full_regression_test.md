@@ -12,12 +12,12 @@ click on a language other than english and confirm that it switches
 
 click on the header 5 times to see if hidden langugages show
 
-# region
+### region
 select a region and confirm that its reflected in the marketplace tab
 
 change the region and confirm that its reflected in the marketplace tab
 
-# biometric authentication
+### biometric authentication
 confirm that the biometric authetication option does not show for a phone without biometrics available
 
 turn off biometrics on the phone and confirm that the option is disabled in the aqua wallet
