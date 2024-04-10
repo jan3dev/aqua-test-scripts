@@ -31,4 +31,4 @@ Enter the same seed as last time (the screenshot taken above) but change the las
 
 Enter the same seed as last time (the screenshot taken above) but change one of the words to an invalid word. Confirm that an error message is shown.
 
-Enter the correct seed and confirm that the wallet is restored with the balance shown. 
+Enter the correct seed and confirm that the wallet is restored with the balance shown. Confirm that settings like darkmode are all reset from before
