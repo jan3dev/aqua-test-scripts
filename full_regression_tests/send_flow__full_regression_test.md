@@ -48,7 +48,7 @@ Below are steps to validate scanning QRs on asset specific screens
 - [ ] Verify tx shows up in tx history
 - [ ] Error State: Verify amount over balance shows error
 
-### LIGHTNING
+### LIGHTNING (Boltz)
 - [ ] Send various wallets
 - [ ] Send various Lightning Address
 - [ ] Send Aqua-to-Aqua (converts to LBTC send)
@@ -56,8 +56,10 @@ Below are steps to validate scanning QRs on asset specific screens
     - [ ] Verify sending to address
     - [ ] On receive side, there is no success screen (https://github.com/jan3dev/aqua-dev/issues/755), but verify receive
 - [ ] Verify shows up in Tx Detail
+- [ ] Edge Case: Scan an invoice that already has a swap initiated
 
-REFUNDS: The boltz submarine swap can fail for a number of reasons, mainly lightning liquidity or routing issues. These happen more often with smalle nodes. If a swap fails, you will still see the tx success screen as the lbtc sats were sent successfully. However, in the tx detail screen for that lbtc send the boltz section will show failed. Because of the timelock on the refund half of the script, users must wait around 48 hours to claim a refund. In Bravo release this will be done automatically with the swap checker, and you will see a new transaction for those sats. The swap checker runs on each new app start.
+### BOLTZ SWAP REFUNDS
+TIMELOCKED REFUNDS: The boltz submarine swap can fail for a number of reasons, mainly lightning liquidity or routing issues. These happen more often with smalle nodes. If a swap fails, you will still see the tx success screen as the lbtc sats were sent successfully. However, in the tx detail screen for that lbtc send the boltz section will show failed. Because of the timelock on the refund half of the script, users must wait around 48 hours to claim a refund. In Bravo release this will be done automatically with the swap checker, and you will see a new transaction for those sats. The swap checker runs on each new app start.
 
 COOPERATIVE REFUNDS: When taproot swaps are implemented, cooperative swaps should happen near instantanesouly once a failure state comes back from boltz.
 
