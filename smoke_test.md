@@ -92,7 +92,7 @@ to quickly identify any major issues or showstoppers early in the testing proces
 
 
 
-## ## SETTINGS
+## SETTINGS
 - [ ] Invite others to AQUA
 - [ ] Get Help
 - [ ] Language
@@ -110,4 +110,6 @@ to quickly identify any major issues or showstoppers early in the testing proces
 ##  MARKETPLACE
 - [ ] Test Meld flow
 
-## ONBOARDING
+
+## UPDATING VERSIONS
+- [ ] Test any issues that might come with updating versions. Looks for pending states carried over from previous version, such as pending swaps. Changes between versions in how we handle these states might affect outcomes.
