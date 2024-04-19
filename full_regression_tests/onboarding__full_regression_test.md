@@ -14,6 +14,8 @@ The following must be done on iOS and Android:
 - [ ] Kill the app and restart and confirm that the backup screen is shown
 
 ### Backup Wallet
+The backup wallet screen will only show for a new wallet that has at least one transaction. It will not show if you restore a wallet.
+
 - [ ] Click on start backup > continue
 
 - [ ] click on 4 wrong words and confirm and error screen is shown
