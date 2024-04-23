@@ -85,4 +85,4 @@ COOPERATIVE REFUNDS: When taproot swaps are implemented, cooperative swaps shoul
 - [ ] Boltz: Verify fee displays
 
 ### SUCCESS SCREEN - ALL ASSETS
-- [ ] Verify amount, network fee, tx id, time in utc, data
+- [ ] Verify amount, network fee, tx id, time in utc, date
