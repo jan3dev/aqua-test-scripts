@@ -1,7 +1,7 @@
 TODO: This was copied from the smoke test to start the folder - needs to be filled out with full functionality.
 
 ## SEND
-### QRSCANNER + TEXT FIELD ENTRY
+### ADDRESS - QRSCANNER + TEXT FIELD ENTRY
 - [ ] Test scanning valid QR codes for all available assets
     - [ ] Bitcoin
       - [ ] TODO: Add all variations of Bitcoin addresses
@@ -32,6 +32,8 @@ Below are steps to validate scanning QRs on asset specific screens
     - [ ] There are exceptions where lightning and lbtc are considered "compatible" assets and should not show an error
     - [ ] USDt Liquid, Tron and Ethereum addresses are all "compatible" and should switch to that version of a USDt send.
      
+### AMOUNT (All Assets)
+- [ ] Verify when tap Send All button, amount field is still editable and de-activates Send All button when edited. Verify correct amount shows in Review Screen
  
 ### BITCOIN
 - [ ] Regular Send
