@@ -7,7 +7,6 @@
 ### AMOUNT ENTRY - All assets
 - [ ] Verify text entry is restricted to numbers and a single decimal
 - [ ] Verify decimals are capped at the precision of the asset (most have a precision of 8, so should be capped at 8 decimals)
-    - Bug: We have a bug on this: https://github.com/jan3dev/aqua-dev/issues/770
 
 
 ### BITCOIN
