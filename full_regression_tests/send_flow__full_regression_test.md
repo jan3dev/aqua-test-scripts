@@ -88,3 +88,15 @@ COOPERATIVE REFUNDS: When taproot swaps are implemented, cooperative swaps shoul
 
 ### SUCCESS SCREEN - ALL ASSETS
 - [ ] Verify amount, network fee, tx id, time in utc, date
+
+## EDGE CASES
+
+### TEST NOT ENOUGH LBTC FOR LIQUID TX FEES
+To send a liquid tx for any asset the user needs LBTC for the fees.
+
+Fail Case: Load a wallet with USDt and EURx balance but 0 LBTC balance
+- [ ] Try to send a USDt or EURx tx, verify that "Not enough funds for fee" popup shows on Send Amount Screen
+- [ ] Try to send a LBTC tx, verify the "Not enough funds" popup shows on Send Amount Screen
+
+Success Case: Switch to a wallet with USDt and LBTC balance
+- [ ] Verify you can send a USDt tx using LBTC as fee
