@@ -27,6 +27,7 @@ to quickly identify any major issues or showstoppers early in the testing proces
 ### BITCOIN
 - [ ] Regular Send
 - [ ] Verify fee rates show and change when tapped
+- [ ] Send with custom fee
 - [ ] Send All
 - [ ] Fiat-denominated
 - [ ] Verify tx shows up in tx history
