@@ -123,3 +123,9 @@ to quickly identify any major issues or showstoppers early in the testing proces
 
 ## UPDATING VERSIONS
 - [ ] Test any issues that might come with updating versions. Looks for pending states carried over from previous version, such as pending swaps. Changes between versions in how we handle these states might affect outcomes.
+
+
+## VPN + BAD/NO NETWORK CONDITIONS
+- [ ] Test with a VPN on - some external endpoints have had issues with endpoints. 
+    - Sideshift (USDt-Tether and Eth swaps) block US endpoints
+- [ ] Test with bad network and no network
