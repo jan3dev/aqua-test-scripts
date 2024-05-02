@@ -20,12 +20,14 @@ to quickly identify any major issues or showstoppers early in the testing proces
 - [ ] Bip21
     - [ ] Liquid non-LBTC with assetId goes to proper asset
     - [ ] BTC with Lightning fallback goes to Lightning Send
+    - [ ] correctly parses amount (BTC, LBTC, Lightning, USDT...)
 - [ ] Lightning Address
 - [ ] LNURL-Pay
 
 ### BITCOIN
 - [ ] Regular Send
 - [ ] Verify fee rates show and change when tapped
+- [ ] Send with custom fee
 - [ ] Send All
 - [ ] Fiat-denominated
 - [ ] Verify tx shows up in tx history
@@ -58,19 +60,25 @@ to quickly identify any major issues or showstoppers early in the testing proces
 ## RECEIVE
 ### BITCOIN
 - [ ] Address generation
+- [ ] While setting amount, check fiat -> sats conversion is correct
+- [ ] If amount is set, check it's encoded correctly in QR
 
 ### LBTC
-- [ ] If amount is entered, the text displayed and copy button don’t include the bip21, but Share and QR include the full bip21 with AMOUNT and ASSETID
+- [ ] While setting amount, check fiat -> sats conversion is correct
+- [ ] If amount is entered, the text displayed and copy button don’t include the BIP21, but Share and QR include the full bip21 with AMOUNT and ASSETID
     - [ ] Also test fiat-demoninated is converted to lbtc in bip21
 - [ ] Switch between LBTC/Lightning is smooth and resets state
 
 ### LIGHTNING
 - [ ] Invoice generated
+- [ ] While setting amount, check fiat -> sats conversion is correct
+- [ ] Check amount is corretly encoded in BIP21
 - [ ] Generated Invoice has routingHints from Boltz (for aqua-to-aqua send)
 - [ ] Success screen shows upon invoice payment
 
 ### USDT
 - [ ] Switch between networks is smooth and resets state
+- [ ] If amount is set, check it's correctly encoded in BIP21
 - [ ] Regular Receive
 - [ ] Sideshift
     - [ ] Verify handles region not allowed error gracefully (switch vpn to US for this)
@@ -98,6 +106,7 @@ to quickly identify any major issues or showstoppers early in the testing proces
 - [ ] Get Help
 - [ ] Language
 - [ ] Region (does nothing right now)
+- [ ] Reference Rate
 - [ ] Biometric Auth
 - [ ] Dark/Light/Botev Mode
 - [ ] Default Explorer
