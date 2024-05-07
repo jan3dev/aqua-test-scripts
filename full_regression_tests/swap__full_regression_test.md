@@ -1,28 +1,29 @@
 The following must be done on iOS and Android:
 
 Peg In
-- amount lower than available
-- amount lower than the lower limit for peg in
-- swap all
-- some amount lower than swap all†
+- Amount lower than available
+- Amount lower than the lower limit for peg in
+- Swap all
+- Some amount lower than swap all†
+- Edge case: Minimal amount with fees higher than amount (if high fees exist at the time). Should throw error - otherwise would have negative peg-out amount.
 
 Peg Out
-- amount lower than available
-- amount lower than the lower limit for peg in
-- swap all
-- some amount lower than swap all
+- Amount lower than available
+- Amount lower than the lower limit for peg in
+- Swap all
+- Some amount lower than swap all
 
 LBTC to USDT
-- amount lower than available
-- amount lower than the lower limit for peg in
-- swap all
-- some amount lower than swap all
+- Amount lower than available
+- Amount lower than the lower limit for peg in
+- Swap all
+- Some amount lower than swap all
 
 USDT to LBTC
-- amount lower than available
-- amount lower than the lower limit for peg in
-- swap all
-- some amount lower than swap all
+- Amount lower than available
+- Amount lower than the lower limit for peg in
+- Swap all
+- Some amount lower than swap all
 
 OTHER
 - [ ] Remove USDT from the asset list and confirm that it does not show in the swap list
