@@ -94,7 +94,10 @@ to quickly identify any major issues or showstoppers early in the testing proces
 ## SWAPS
 - [ ] Test Swap LBTC <> USDT
 - [ ] Test Peg in
+    - [ ] Verify peg-out amount in second field is rougly: (peg-in amount - btc fast fees - sideswap fee)
 - [ ] Test Peg out
+  - [ ] Verify peg-in amount in second field is rougly: (peg-out amount - liquid fee - sideswap fee) 
+       -- difference should be much lower than peg-out due to liquid fee being much lower
 
 
 ## TX HISTORY/DETAIL SCREENS
