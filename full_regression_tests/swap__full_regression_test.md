@@ -4,7 +4,8 @@ Peg In
 - Amount lower than available
 - Amount lower than the lower limit for peg in
 - Swap all
-- Some amount lower than swap all†
+- Some amount lower than swap all
+- Verify peg-out amount in second field is rougly: (peg-in amount - btc fast fees - sideswap fee)
 - Edge case: Minimal amount with fees higher than amount (if high fees exist at the time). Should throw error - otherwise would have negative peg-out amount.
 
 Peg Out
@@ -12,6 +13,8 @@ Peg Out
 - Amount lower than the lower limit for peg in
 - Swap all
 - Some amount lower than swap all
+- Verify peg-in amount in second field is rougly: (peg-out amount - liquid fee - sideswap fee) 
+  (difference should be much lower than peg-out due to liquid fee being much lower)
 
 LBTC to USDT
 - Amount lower than available
