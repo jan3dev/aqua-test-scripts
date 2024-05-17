@@ -10,11 +10,11 @@
 
 
 ### BITCOIN
-- [ ] Displays valid, unused Bitcoin address in text that's copyable
+- [ ] Displays valid, unused Bitcoin address in text that's copyable. Verify correct address is copied.
 - [ ] Displays same address in QR code
 - [ ] Enter amount allows entry in sats or fiat with conversion
 - [ ] Enter amount will create a bip21 for the Share button only. The text display and QR will only show the base address
-- [ ] Back button then re-enter Receive Bitcoin Screen and verify that new address displays
+- [ ] Back button then re-enter Receive Bitcoin Screen and verify that new address displays (gdk rotates addresses) and verify that it's correctly copied.
 
 ### LBTC
 - [ ] Same steps as Bitcoin, except verify that correct assetId shows in bip21 on Share button
