@@ -1,15 +1,4 @@
-### Notes:
-Swaps between BTC <> LBTC use peg-in and peg-out through Sideswap api. In the future this may change to Boltz atomic swaps.
-LBTC <> USDt uses Sideswap as well but use a combined pset method.
-
-For peg-in and peg-out, as of May 2024 the amount logic is as follows:
-- User enters 10,000 sats to peg in or out, for example
-- The amount calculated in the Receive field is an estimate for this 10,000 - onchain fee - sideswap fee (0.1%)
-  eg 10,000 - 700 - 10 = 9,290
-- However, the amount we send to sideswap will be 9,300, because they then take their fee out when on the second tx
-- The user doesn't get 9,290 though, because there will also be a second tx on the receiving chain, and sideswap will take that fee out as well. We don't include this second fee in the Receive Amount prompt because for peg-out this second fee will be btc onchain and sideswap decides the fee rate
-
-### The following must be done on iOS and Android:
+## The following must be done on iOS and Android:
 
 Peg In
 - [ ] Amount lower than available
@@ -50,3 +39,15 @@ OTHER
 EDGE CASES
 
 - [ ] Non-Confidential Tx Input: There is an edge case that popped up where a user had received a lbtc uxto that was not confidential. Because Sideswap only works with confidential inputs, there was an error thrown. The solution was for the user to send those funds to themselves using Aqua to create a confidential utxo that would then be used for the sideswap swap.
+
+## Notes:
+Swaps between BTC <> LBTC use peg-in and peg-out through Sideswap api. In the future this may change to Boltz atomic swaps.
+LBTC <> USDt uses Sideswap as well but use a combined pset method.
+
+For peg-in and peg-out, as of May 2024 the amount logic is as follows:
+- User enters 10,000 sats to peg in or out, for example
+- The amount calculated in the Receive field is an estimate for this 10,000 - onchain fee - sideswap fee (0.1%)
+  eg 10,000 - 700 - 10 = 9,290
+- However, the amount we send to sideswap will be 9,300, because they then take their fee out when on the second tx
+- The user doesn't get 9,290 though, because there will also be a second tx on the receiving chain, and sideswap will take that fee out as well. We don't include this second fee in the Receive Amount prompt because for peg-out this second fee will be btc onchain and sideswap decides the fee rate
+
