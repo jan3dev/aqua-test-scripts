@@ -1,4 +1,4 @@
-## The following must be done on iOS and Android:
+### The following must be done on iOS and Android:
 
 Peg In
 - [ ] Amount lower than available
