@@ -61,7 +61,7 @@ Below are steps to validate scanning QRs on asset specific screens
 - [ ] Edge Case: Scan an invoice that already has a swap initiated
 
 ### BOLTZ SWAP REFUNDS
-TIMELOCKED REFUNDS: The boltz submarine swap can fail for a number of reasons, mainly lightning liquidity or routing issues. These happen more often with smalle nodes. If a swap fails, you will still see the tx success screen as the lbtc sats were sent successfully. However, in the tx detail screen for that lbtc send the boltz section will show failed. Because of the timelock on the refund half of the script, users must wait around 48 hours to claim a refund. In Bravo release this will be done automatically with the swap checker, and you will see a new transaction for those sats. The swap checker runs on each new app start.
+TIMELOCKED REFUNDS: The boltz submarine swap can fail for a number of reasons, mainly lightning liquidity or routing issues. These happen more often with small nodes. If a swap fails, you will still see the tx success screen as the lbtc sats were sent successfully. However, in the tx detail screen for that lbtc send the boltz section will show failed. Because of the timelock on the refund half of the script, users must wait around 48 hours to claim a refund. In Bravo release this will be done automatically with the swap checker, and you will see a new transaction for those sats. The swap checker runs on each new app start.
 
 COOPERATIVE REFUNDS: When taproot swaps are implemented, cooperative swaps should happen near instantanesouly once a failure state comes back from boltz.
 
@@ -73,6 +73,20 @@ COOPERATIVE REFUNDS: When taproot swaps are implemented, cooperative swaps shoul
     - [ ] Verify Sideshift order shows up in order history (currently in history button on USDT tx history screen), even if pending
     - [ ] Verify Send (no testnet unfortunately)
     - [ ] Error State: If not in an allowed country, verify error message (US is not an allowed country)
+
+PAY WITH USDt FEES (Sideswap taxi/payoin/p2ep)
+This is the option on Send Review screen to pay network fees with USDt. Under the hood it is a payjoin with sideswap. Their fee for the service is fixed at 0.10 usdt, and then network fee is added to send. Should only be enabled when sending USDt
+
+- [ ] Send all
+- [ ] Send just under total balance accounting for fees. eg, total balance is $159, try send $158.35
+- [ ] Try send just under total balance without accounting for fees. Eg, total balance is $159, try send $158.90
+- [ ] Try send from a wallet with only $0.10 usdt and no lbtc and no usdt (won’t be able to send for lack of fees)
+- [ ] Fees should be in the range of 0.35-0.60 (will be higher the more input utxos, which is generally correlated with higher send amount)
+- [ ] Verify pay with USDt option is enabled only when sending USDt
+- [ ] Verify fee is correct on tx success screen
+- [ ] Verify switch between lbtc fees and usdt fees doesn’t break anything
+- [ ] Verify go back and enter new amount adjusts fees, and send tx still works
+- [ ] Verify extra 0.10 fee shows up in transaction detail screen apart from network fee
 
 ### OTHER ASSETS (EURx, JPY, etc)
 - [ ] Regular Send on any other asset
