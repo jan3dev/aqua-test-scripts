@@ -34,6 +34,11 @@ Below are steps to validate scanning QRs on asset specific screens
      
 ### AMOUNT (All Assets)
 - [ ] Verify when tap Send All button, amount field is still editable and de-activates Send All button when edited. Verify correct amount shows in Review Screen
+- [ ] Verify fiat conversion works for multiple currencies
+- [ ] Amount field not editable:
+    - [ ] Asset is lightning from a scanned bolt11 invoice
+    - [ ] Asset is lightning from lightning address or lnurlpay, and amount is fixed (min/max are equal in server response)
+    - [ ] "Use all funds" is enabled
  
 ### BITCOIN
 - [ ] Regular Send
