@@ -23,6 +23,8 @@ TODO: This was copied from the smoke test to start the folder - needs to be fill
     - [ ] When the lightning address is entered on the Send Address Screen, the Continue button should enable once text passing a basic email regex is entered. This has not entered the lightning address resolution flow yet, the initial validation is just a basic email regex.
 
 - [ ] LNURL
+    - [ ] Scan LNURLp with fixed amount, should resolve amount in Send Amount field and should be uneditable
+    - [ ] Scan LNURLp with min/max amounts, should override boltz min/max in Send Amount Screen with LNURLp min/max
 
 The above are general address validation steps for the QR scanner on any screen. 
 Below are steps to validate scanning QRs on asset specific screens
