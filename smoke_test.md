@@ -41,6 +41,7 @@ to quickly identify any major issues or showstoppers early in the testing proces
 ### LIGHTNING
 - [ ] Send various wallets
 - [ ] Send Lightning Address
+- [ ] Send LNURLp
 - [ ] Send Aqua-to-Aqua (converts to LBTC send)
 - [ ] Verify shows up in Tx Detail
 
