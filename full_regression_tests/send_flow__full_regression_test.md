@@ -25,6 +25,7 @@ TODO: This was copied from the smoke test to start the folder - needs to be fill
 - [ ] LNURL
     - [ ] Scan LNURLp with fixed amount, should resolve amount in Send Amount field and should be uneditable
     - [ ] Scan LNURLp with min/max amounts, should override boltz min/max in Send Amount Screen with LNURLp min/max IF higher than boltz min and/or lower than boltz max
+    - [ ] Scan LNURLp with a fixed amount lower than boltz min (eg, 21 sats), should show error stating below min
 
 The above are general address validation steps for the QR scanner on any screen. 
 Below are steps to validate scanning QRs on asset specific screens
