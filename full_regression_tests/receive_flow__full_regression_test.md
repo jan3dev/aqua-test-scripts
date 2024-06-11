@@ -26,6 +26,9 @@
 - [ ] Verify tap "Generate Invoice" button shows spinner and resolves to a return invoice from boltz
 - [ ] Success Screen: This is unique to lightning on receive page for now. If the generated invoice is paid, verify a success screen displays with amount received
 - [ ] Error State: Verify error shows when enter an amount above or below boltz max/min
+- [ ] NEED TO test claims with a variety of delays to mimic real world usage
+  - [ ] Create invoice, background app for > 15min, pay invoice from another app, foreground app and verify that claim function runs and receive is completed.
+  - [ ] Create invoice, close app. Pay invoice from another app. Open Aqua and verify that claim function runs and receive is completed.
 
 
 ### USDT
