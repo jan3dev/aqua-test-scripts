@@ -44,6 +44,9 @@ to quickly identify any major issues or showstoppers early in the testing proces
 - [ ] Send LNURLp
 - [ ] Send Aqua-to-Aqua (converts to LBTC send)
 - [ ] Verify shows up in Tx Detail
+- [ ] TEST REFUNDS: In "Experimental Features" you can force a send to fail and enter a refund state.
+  - [ ] For v0.1.x, you will have to wait ~24 hours for the refund timelock to expire before testing if it broadcasts successfully
+  - [ ] For v0.2.x, the refund should be near instant due to taproot cooperative keypath spend
 
 ### USDT
 - [ ] Regular Send
@@ -70,12 +73,15 @@ to quickly identify any major issues or showstoppers early in the testing proces
     - [ ] Also test fiat-demoninated is converted to lbtc in bip21
 - [ ] Switch between LBTC/Lightning is smooth and resets state
 
-### LIGHTNING
+### LIGHTNING (Boltz)
 - [ ] Invoice generated
 - [ ] While setting amount, check fiat -> sats conversion is correct
 - [ ] Check amount is corretly encoded in BIP21
 - [ ] Generated Invoice has routingHints from Boltz (for aqua-to-aqua send)
 - [ ] Success screen shows upon invoice payment
+- [ ] NEED TO test claims with a variety of delays to mimic real world usage
+  - [ ] Create invoice, background app for > 15min, pay invoice from another app, foreground app and verify that claim function runs and receive is completed.
+  - [ ] Create invoice, close app. Pay invoice from another app. Open Aqua and verify that claim function runs and receive is completed.
 
 ### USDT
 - [ ] Switch between networks is smooth and resets state
