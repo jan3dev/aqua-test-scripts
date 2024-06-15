@@ -95,6 +95,8 @@ This is the option on Send Review screen to pay network fees with USDt. Under th
 - [ ] Verify switch between lbtc fees and usdt fees doesn’t break anything
 - [ ] Verify go back and enter new amount adjusts fees, and send tx still works
 - [ ] Verify extra 0.10 fee shows up in transaction detail screen apart from network fee
+- [ ] Wallet with USDt but 0 LBTC, verify USDt sends work with USDt fees. LBTC fee selector should be disabled.
+- [ ] Wallet with LBTC but 0 USDt, verify that all liquid sends work, including USDt, allowing user to send with LBTC fees. USDt fee selector should be disabled.
 
 ### OTHER ASSETS (EURx, JPY, etc)
 - [ ] Regular Send on any other asset
