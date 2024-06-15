@@ -51,6 +51,9 @@ to quickly identify any major issues or showstoppers early in the testing proces
 ### USDT
 - [ ] Regular Send
     - [ ] NOTE: Redeposits don’t show up in tx history due to gdk
+- [ ] USDt Fee
+    - [ ] Wallet with USDt but 0 LBTC, verify USDt sends work with USDt fees. LBTC fee selector should be disabled.
+    - [ ] Wallet with LBTC but 0 USDt, verify that all liquid sends work, including USDt, allowing user to send with LBTC fees. USDt fee selector should be disabled.
 - [ ] Sideshift
     - [ ] Verify Sideshift order shows up in order history (currently in history button on USDT tx history screen), even if pending
     - [ ] Verify Send (no testnet unfortunately)
