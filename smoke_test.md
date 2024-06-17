@@ -108,7 +108,7 @@ to quickly identify any major issues or showstoppers early in the testing proces
 - [ ] Test Peg out
   - [ ] Verify peg-in amount in second field is rougly: (peg-out amount - liquid fee - sideswap fee) 
        -- difference should be much lower than peg-out due to liquid fee being much lower
-
+- [ ] Test Swap All
 
 ## TX HISTORY/DETAIL SCREENS
 
