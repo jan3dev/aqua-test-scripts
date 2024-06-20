@@ -2,6 +2,10 @@
 The purpose of a smoke test to test critical and major functionalities,
 to quickly identify any major issues or showstoppers early in the testing process.
 
+## FRESH INSTALL VS UPDATING VERSIONS
+- [ ] Test fresh install vs updating versions
+- [ ] Test any issues that might come with updating versions. Looks for pending states carried over from previous version, such as pending swaps. Changes between versions in how we handle these states might affect outcomes.
+
 ## AUTH
 - [ ] Test Biometric On/Off
 
@@ -133,9 +137,6 @@ to quickly identify any major issues or showstoppers early in the testing proces
 ##  MARKETPLACE
 - [ ] Test Meld flow
 
-
-## UPDATING VERSIONS
-- [ ] Test any issues that might come with updating versions. Looks for pending states carried over from previous version, such as pending swaps. Changes between versions in how we handle these states might affect outcomes.
 
 
 ## VPN + BAD/NO NETWORK CONDITIONS
