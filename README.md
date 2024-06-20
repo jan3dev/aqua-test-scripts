@@ -1,5 +1,5 @@
 # Getting Started
-To begin testing, please refer to the detailed guidelines above. This guide covers everything you need to understand the testing process flow ensuring you have all necessary information at your fingertips.
+To begin testing, please refer to the detailed guidelines below. This guide covers everything you need to understand the testing process flow.
 
 # Testing Flow Overview
 ### L1. Smoke Test
@@ -20,9 +20,10 @@ This involves a meticulous step-by-step verification of the application's functi
 
 
 ## How to Access Beta Versions ❓
-Step-by-step instructions for accessing beta versions on iOS and Android, ensuring you're always on the cutting edge.
+Step-by-step instructions for accessing beta versions on iOS and Android.
+
 ### For iOS Users
-iOS is known for being more rigorous in its beta testing process. To access the beta version on iOS, you need a TestFlight invite.
+ access the beta version on iOS, you need a TestFlight invite.
 
  👀 TestFlight is Apple's platform that allows developers to distribute beta versions of their apps to selected testers. https://developer.apple.com/testflight/
 
@@ -45,16 +46,13 @@ Download and install the beta version.
 
 # Testing on Testnet and Mainnet
 ## Testnet Testing 🛠️
-Testnet is a safe environment for testing without any real financial impact. Here's how to get started:
 
 ### **Steps to Test on Testnet:**
-1. Ensure you have version 0.2.0 of the app installed.
+1. Ensure you have minimum version 0.2.0 of the app installed.
 2. Tap the settings header five times to unlock experimental features.
 3. Enable Testnet from the experimental features menu.
 4. Close and reopen the app.
 5. Look for the Bitcoin Testnet price—it confirms you're in Testnet!
-
-By following these steps, you can confirm that you are testing in a safe environment without any real financial implication.  Perfect for trying new features!
 
 ### Useful Links for Testnet Testing 🌐
 - https://liquidtestnet.com/faucet
@@ -63,21 +61,11 @@ By following these steps, you can confirm that you are testing in a safe environ
 
 **Note:** Some functionalities do not support Testnet:
 - Sideshift (USDT Eth + Tron swaps)
-- Swap BTC <> LBTC (LBTC <> USDt swaps are available on Testnet)
+- Pegs BTC <> LBTC (LBTC <> USDt swaps are available on Testnet)
 
 ## Mainnet Testing 🚀
-Mainnet is where real transactions happen! Here’s what you need to know:
-
 ### Why Test on Mainnet Before Release? 
-- **Real-World Readiness:** Ensures your app performs reliably under live transaction conditions.
-  
-  #### 💡 When Mainnet Testing Might Make Sense:
-  - Identifying critical issues that may only manifest under real user and transaction conditions.
-  - Gathering valuable real-world data and user feedback that can't be fully replicated in testnets.
-  - Verifying that all features operate seamlessly in a live, dynamic network environment
-    
-- **Early Risk Mitigation:** Prevents potential setbacks by catching and resolving issues pre-release.
-- **Balancing Innovation with Responsibility:** Innovate cautiously to respect network stability and security.
+- Mainnet costs money, but we need to test every transaction type on mainnet before release
 
 ### Now that you're on Mainnet/Testnet, Check This Out! 🔍
 
@@ -85,10 +73,11 @@ Mainnet is where real transactions happen! Here’s what you need to know:
 - **Bitcoin**
 - **Usdt (en liquid, tron, ethereum)**
 - **Lightning**
-- **Liquid bitcoin**
+- **Liquid Bitcoin**
+- **Other Liquid Assets**
 ## Test data
 **COMING SOON 🚀**
-## 🔧 Tools and apps you need to install to start testing.
+## 🔧 Useful wallets to help with testing.
 - **Green:** Supports various seed options. You can seamlessly send and receive LBTC and BTC between different wallets on both Testnet and Mainnet environments.
 - **Sideswap:** Shares the same seed as Aqua for easy continuity and testing.
 - **Trust:** Enables transactions with USDt on Ethereum and Tron networks.
@@ -99,9 +88,9 @@ Mainnet is where real transactions happen! Here’s what you need to know:
   1. Create an account at ```LNBits.com```
   2. Launch and instance and pay the 21 sats fee
   3. Install both LNURLp and LNURLw extensions
-### **Reporting Bugs in Version 0.2.0: Where Can I Report Them? 🐞**
+### **Reporting Bugs: Where Can I Report Them? 🐞**
 
-If you spot any bugs in version 0.2.0 of Aqua.
+If you spot any bugs in Aqua.
 ```https://github.com/jan3dev/aqua-dev/issues```
 ### **Accessing Older APKs for Android: How Can I Get Them?** 
 
@@ -111,6 +100,7 @@ Visit our public repository on GitHub to download previous releases  ```https://
 In Aqua, we've streamlined the process by displaying the bip21 address exclusively within the QR code when you enter an amount in "Receive." To ensure it's generated correctly, simply scan the QR code with your device or use a reliable QR code reader.
 
 ### **Third-Party Apps involves:**
+  - boltz.exchange
   - sideswap.io
   - sideshift.ai
 
