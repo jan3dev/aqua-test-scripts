@@ -133,10 +133,15 @@ to quickly identify any major issues or showstoppers early in the testing proces
 - [ ] TOS/Privacy/Social Links
 
 
+## MANAGED ASSETS
+
+MEXAS
+- [ ] Settings > Manage Assets > Add More Assets. Verify Mexas is available to add. Add and verify it is not on Home Screen and Send/Receive Grids
+- [ ] Test Send and Receive from external wallet successfully. Verify txs show in tx history for Mexas
+
 
 ##  MARKETPLACE
 - [ ] Test Meld flow
-
 
 
 ## VPN + BAD/NO NETWORK CONDITIONS
