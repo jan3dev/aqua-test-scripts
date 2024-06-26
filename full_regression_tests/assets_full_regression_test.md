@@ -6,3 +6,4 @@
 - [ ] Repeat changing region to Mexico so Mexas is auto-added to Home Screen. Change region to !Mexico. Verify Mexas is auto-removed from Home Screen
 - [ ] Test Send and Receive from external wallet successfully. Verify txs show in tx history for Mexas
 - [ ] Verify fiat conversion don't show or otherwise don't have any issues
+- [ ] Settings > Manage Assets > Toggle off USDT . Check the places where USDt appears and ensure nothing unusual is present
