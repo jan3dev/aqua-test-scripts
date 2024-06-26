@@ -95,10 +95,10 @@ If you spot any bugs in Aqua.
 ```https://github.com/jan3dev/aqua-dev/issues```
 ### **Accessing Older APKs for Android: How Can I Get Them?** 
 
-Visit our public repository on GitHub to download previous releases  ```https://github.com/AquaWallet/aqua-wallet/releases```
+Visit the public repository on GitHub to download previous releases  ```https://github.com/AquaWallet/aqua-wallet/releases```
 ### **Why do I only see the bip21 address in the QR code when setting an amount? How can I ensure it's generated correctly?**
 
-In Aqua, we've streamlined the process by displaying the bip21 address exclusively within the QR code when you enter an amount in "Receive." To ensure it's generated correctly, simply scan the QR code with your device or use a reliable QR code reader.
+In Aqua, it displays the bip21 address within the QR code when you enter an amount in "Receive." To ensure correct generation, simply scan the QR code with your device or use a reliable QR code reader.
 
 ### **Third-Party Apps involves:**
   - boltz.exchange
@@ -109,8 +109,9 @@ In Aqua, we've streamlined the process by displaying the bip21 address exclusive
 
 
 ### After testing... 
+
 ## 📊 General Report
-The general report plays a crucial role in summarizing and effectively communicating testing outcomes. It documents tested features, executed test cases, and encountered issues comprehensively. Its primary purpose is to provide a clear and concise overview of the product's testing status.
+This general report should ideally be generated regularly, such as after each software version release or at specific intervals based on project needs and software update frequencies. This ensures that the information is up-to-date and relevant for ongoing decision-making processes.
 
 |**General Information**  |**Details**          |
 |-------------------------|---------------------|
