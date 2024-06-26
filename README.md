@@ -81,6 +81,7 @@ Download and install the beta version.
 - **Green:** Supports various seed options. You can seamlessly send and receive LBTC and BTC between different wallets on both Testnet and Mainnet environments.
 - **Sideswap:** Shares the same seed as Aqua for easy continuity and testing.
 - **Trust:** Enables transactions with USDt on Ethereum and Tron networks.
+- **Helm Wallet:** a simple liquid wallet that can be set up on Testnet. ```https://helm-wallet.com/``` 
 #### 🔗 Explore a Web Wallet Demo:
 ```https://demo.lnbits.com/```
 ## Must-Knows 🌟
