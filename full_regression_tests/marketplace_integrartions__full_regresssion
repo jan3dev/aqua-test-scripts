@@ -1,14 +1,18 @@
 ## Test Availability by Region
 
-Change region and verify the correct Buy Bitcoin integrations appear.
+- [ ] Test each provider below through whole flow of KYC, Payment Options, Purchase. Some have testnet.
+      For ones where we do have to purchase we can test only every now and then. 
+      For those without testnet it might be impossible to get past KYC, but get as far as possible
+- [ ] Change region and verify the correct Buy Bitcoin integrations appear.
 
-### Meld
+
+### Meld (Testnet ✅)
 - [ ] All Regions
 
-### Bull Bitcoin
+### Bull Bitcoin (No Testnet ❌)
 - [ ] Canada only
 
-### Pocket Bitcoin
+### Pocket Bitcoin (Testnet ✅)
 - [ ] Andorra
 - [ ] Austria
 - [ ] Belgium
