@@ -13,6 +13,7 @@ to quickly identify any major issues or showstoppers early in the testing proces
 ## WALLET
 - [ ] Create new wallet
 - [ ] Receive Tx
+- [ ] Close app and reopen. Verify that a backup seed reminder shows (only happens on new wallets after you receive your first sats)
 - [ ] Delete wallet
 - [ ] Restore existing wallet with balances
     - [ ] Verify Balances
