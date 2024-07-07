@@ -18,6 +18,13 @@
 
 ### LBTC
 - [ ] Same steps as Bitcoin, except verify that correct assetId shows in bip21 on Share button
+
+DIRECT PEG-INS
+- [ ] Enable the Direct Peg In setting from Advance Settings menu
+- [ ] From Receive screen select Liquid Bitcoin
+- [ ] Tap Direct Peg In button
+- [ ] Use another wallet to send the funds to the provided address
+- [ ] Verify the funds once both funding and payout txns are confirmed (can be found in the status log messages while on the screen)
   
 ### LIGHTNING
 - [ ] Verify switch between tabs for LBTC and Lightning resets state for asset (we might want to change this in future to save state, especially for boltz which requires an api call)
