@@ -4,7 +4,8 @@ to quickly identify any major issues or showstoppers early in the testing proces
 
 ## FRESH INSTALL VS UPDATING VERSIONS
 - [ ] Test fresh install vs updating versions
-- [ ] Test any issues that might come with updating versions. Looks for pending states carried over from previous version, such as pending swaps. Changes between versions in how we handle these states might affect outcomes.
+- [ ] Test any issues that might come with upgrading aqua versions. Looks for pending states carried over from previous version, such as pending swaps. Changes between versions in how we handle these states might affect outcomes.
+- [ ] 🚨🚨 A big issue to look out for on upgrading aqua versions is that if the user is logged in on version A, when upgrading to version B they ARE NOT kicked out and have to enter their seed again. Some users won't have their seed backed up and if this happens they will lose their sats! 🚨🚨
 
 ## AUTH
 - [ ] Test Biometric On/Off
