@@ -2,6 +2,7 @@ A list of tests to run when we have to upgrade GDK, the underlying bitcoin/liqui
 
 - [ ] Create Wallet
 - [ ] Restore Wallet
+- [ ] View seed phrase
 - [ ] Tx List is the same and loads quickly
 - [ ] Send basic liquid tx, usdt tx, other liquid asset tx
 - [ ] Send basic btc tx
