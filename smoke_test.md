@@ -51,8 +51,7 @@ to quickly identify any major issues or showstoppers early in the testing proces
 - [ ] Send Aqua-to-Aqua (converts to LBTC send)
 - [ ] Verify shows up in Tx Detail
 - [ ] TEST REFUNDS: In "Experimental Features" you can force a send to fail and enter a refund state.
-  - [ ] For v0.1.x, you will have to wait ~24 hours for the refund timelock to expire before testing if it broadcasts successfully
-  - [ ] For v0.2.x, the refund should be near instant due to taproot cooperative keypath spend
+  - [ ] The refund should be near instant due to taproot cooperative keypath spend
 
 ### USDT
 - [ ] Regular Send
