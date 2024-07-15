@@ -7,12 +7,21 @@
 
 
 ### Meld (Testnet ✅)
+- [ ] Launch Meld
+- [ ] verify it launches in Aqua
+- [ ] All Regions
+
+### Beaver (Testnet ✅)
+- [ ] Launch Beaver
+- [ ] Verify it launches in Aqua
 - [ ] All Regions
 
 ### Bull Bitcoin (No Testnet ❌)
 - [ ] Canada only
 
 ### Pocket Bitcoin (Testnet ✅)
+- [ ] Launch Pocket
+- [ ] Verify it launches in Aqua
 - [ ] Andorra
 - [ ] Austria
 - [ ] Belgium
