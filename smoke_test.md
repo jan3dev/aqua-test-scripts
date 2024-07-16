@@ -19,6 +19,11 @@ to quickly identify any major issues or showstoppers early in the testing proces
     - [ ] Verify Balances
     - [ ] Verify Tx Details
 
+### Home screen
+- [ ] Verify that the Layer Two logo is updated
+![image](https://github.com/user-attachments/assets/03cb57ec-7c9d-4d56-8041-5dd8b13742c4)
+
+
 ## SEND
 ### QRSCANNER
 - [ ] Test all assets
@@ -135,6 +140,8 @@ to quickly identify any major issues or showstoppers early in the testing proces
 
 
 ## MANAGED ASSETS
+- [ ] Verify that the Layer Two logo is updated ![image](https://github.com/user-attachments/assets/9f0916f4-0a9d-4b65-a590-625a71a39cc4)
+
 
 MEXAS
 - [ ] Settings > Manage Assets > Add More Assets. Verify Mexas is available to add. Add and verify it is not on Home Screen and Send/Receive Grids
