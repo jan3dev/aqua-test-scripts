@@ -1,6 +1,6 @@
 ### The following must be done on iOS and Android:
 
-Peg In
+**Peg In**
 - [ ] Amount lower than available
 - [ ] Amount lower than the lower limit for peg in
 - [ ] Swap all
@@ -9,6 +9,14 @@ Peg In
 - [ ] Verify that the estimated receive amount in this second field matches the amount displayed on the review screen
 - [ ] High fees: Test this during high fee environments (issue to mock this: https://github.com/jan3dev/aqua-dev/issues/892)
 - [ ] Edge case: Minimal amount with fees higher than amount (if high fees exist at the time). Should throw error - otherwise would have negative peg-out amount.
+      
+**Direct Peg in**
+- [ ]  Enable the Direct Peg In setting from Advance Settings menu
+- [ ]  From Receive screen select Liquid Bitcoin
+- [ ]  Tap Direct Peg In button
+- [ ]  Use another wallet to send the funds to the provided address
+- [ ]  Verify the funds once both funding and payout txns are confirmed (can be found in the status log messages while on the screen)
+
 
 Peg Out
 - [ ] Amount lower than available
