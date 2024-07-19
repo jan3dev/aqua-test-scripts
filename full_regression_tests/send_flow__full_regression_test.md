@@ -81,12 +81,14 @@ COOPERATIVE REFUNDS: When taproot swaps are implemented, cooperative swaps shoul
     - [ ] Verify Sideshift order shows up in order history (currently in history button on USDT tx history screen), even if pending
     - [ ] Verify Send (no testnet unfortunately)
     - [ ] Error State: If not in an allowed country, verify error message (US is not an allowed country)
+    - [ ] Verify sideshift ID in all places throughout Sideshift Send Flow
 
 PAY WITH USDt FEES (Sideswap taxi/payoin/p2ep)
 This is the option on Send Review screen to pay network fees with USDt. Under the hood it is a payjoin with sideswap. Their fee for the service is fixed at 0.10 usdt, and then network fee is added to send. Should only be enabled when sending USDt
 
 - [ ] Send all
 - [ ] Send just under total balance accounting for fees. eg, total balance is $159, try send $158.35
+- [ ] Start Send USDt in various amounts. Total fee should be around ~0.39 usd, but variable on size of tx
 - [ ] Try send just under total balance without accounting for fees. Eg, total balance is $159, try send $158.90
 - [ ] Try send from a wallet with only $0.10 usdt and no lbtc and no usdt (won’t be able to send for lack of fees)
 - [ ] Fees should be in the range of 0.35-0.60 (will be higher the more input utxos, which is generally correlated with higher send amount)
@@ -98,6 +100,8 @@ This is the option on Send Review screen to pay network fees with USDt. Under th
 - [ ] Verify extra 0.10 fee shows up in transaction detail screen apart from network fee
 - [ ] Wallet with USDt but 0 LBTC, verify USDt sends work with USDt fees. LBTC fee selector should be disabled.
 - [ ] Wallet with LBTC but 0 USDt, verify that all liquid sends work, including USDt, allowing user to send with LBTC fees. USDt fee selector should be disabled.
+- [ ] Send one USDt tx with USDt fees to verify nothing regressed on final send
+
 
 ### OTHER ASSETS (EURx, JPY, etc)
 - [ ] Regular Send on any other asset
