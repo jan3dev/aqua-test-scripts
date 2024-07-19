@@ -7,6 +7,9 @@ to quickly identify any major issues or showstoppers early in the testing proces
 - [ ] Test any issues that might come with upgrading aqua versions. Looks for pending states carried over from previous version, such as pending swaps. Changes between versions in how we handle these states might affect outcomes.
 - [ ] 🚨🚨 A big issue to look out for on upgrading aqua versions is that if the user is logged in on version A, when upgrading to version B they ARE NOT kicked out and have to enter their seed again. Some users won't have their seed backed up and if this happens they will lose their sats! 🚨🚨
 
+## HOME SCREEN
+- [ ] From Home Screen, tap Layer Two, then Send > On Send Address Screen header you should see new Layer Two icon and title should be Layer Two.
+      
 ## AUTH
 - [ ] Test Biometric On/Off
 
@@ -60,7 +63,7 @@ to quickly identify any major issues or showstoppers early in the testing proces
 
 ### USDT
 - [ ] Regular Send
-    - [ ] NOTE: Redeposits don’t show up in tx history due to gdk
+   NOTE: Redeposits don’t show up in tx history due to gdk
 - [ ] USDt Fee
     - [ ] Wallet with USDt but 0 LBTC, verify USDt sends work with USDt fees. LBTC fee selector should be disabled.
     - [ ] Wallet with LBTC but 0 USDt, verify that all liquid sends work, including USDt, allowing user to send with LBTC fees. USDt fee selector should be disabled.
@@ -95,6 +98,7 @@ to quickly identify any major issues or showstoppers early in the testing proces
 - [ ] NEED TO test claims with a variety of delays to mimic real world usage
   - [ ] Create invoice, background app for > 15min, pay invoice from another app, foreground app and verify that claim function runs and receive is completed.
   - [ ] Create invoice, close app. Pay invoice from another app. Open Aqua and verify that claim function runs and receive is completed.
+  - [ ]  From Send Asset Grid tap Lightning > On Send Address Screen header you should see Lightning icon and title should be Lightning
 
 ### USDT
 - [ ] Switch between networks is smooth and resets state
