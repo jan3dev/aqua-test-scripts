@@ -91,6 +91,7 @@ This is the option on Send Review screen to pay network fees with USDt. Under th
 - [ ] Try send from a wallet with only $0.10 usdt and no lbtc and no usdt (won’t be able to send for lack of fees)
 - [ ] Fees should be in the range of 0.35-0.60 (will be higher the more input utxos, which is generally correlated with higher send amount)
 - [ ] Verify pay with USDt option is enabled only when sending USDt
+- [ ] verify that fee calculations on Send Review Screen are correct.
 - [ ] Verify fee is correct on tx success screen
 - [ ] Verify switch between lbtc fees and usdt fees doesn’t break anything
 - [ ] Verify go back and enter new amount adjusts fees, and send tx still works
