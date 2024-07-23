@@ -8,7 +8,8 @@
 
 ### Meld (Testnet ✅)
 - [ ] Launch Meld
-- [ ] verify it launches in Aqua in both mainnet and testnet
+- [ ] Verify it launches in Aqua in mainnet
+- [ ] Verify it launches in Aqua intestnet
 - [ ] All Regions
 
 ### Beaver (Testnet ✅)
