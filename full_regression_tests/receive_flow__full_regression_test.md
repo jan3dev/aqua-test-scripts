@@ -43,6 +43,7 @@ DIRECT PEG-INS
 
 - [ ] Tron and Ethereum
   - [ ] Verify switch between tabs resets state for asset (we might want to change this in future to save state, especially for boltz which requires an api call)
+  - [ ] Verify that the address does not change when switching between tabs until the cache timeout expires
   - [ ] Verify on enter screen that a spinner displays while sideshift order call returns
   - [ ] Verify on order response that receive address, QR, expiry, min/max, fee breakdown and shiftId display
   - [ ] Verify "Share" shares address only
