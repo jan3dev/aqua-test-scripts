@@ -59,7 +59,8 @@ to quickly identify any major issues or showstoppers early in the testing proces
 - [ ] Send Aqua-to-Aqua (converts to LBTC send)
 - [ ] Verify shows up in Tx Detail
 - [ ] TEST REFUNDS: In "Experimental Features" you can force a send to fail and enter a refund state.
-  - [ ] The refund should be near instant due to taproot cooperative keypath spend
+    - [ ] The refund should be near instant due to taproot cooperative keypath spend
+- [ ] Send with Lightning and check that the blue success screen first displays 'You're sending...' and then updates to 'You've sent' when the transaction is complete.
 
 ### USDT
 - [ ] Regular Send
