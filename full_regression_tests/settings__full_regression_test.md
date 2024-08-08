@@ -46,7 +46,11 @@ Turn on botev mode from light mode and confirm that it switches the light/dark m
 - [ ] Change the default block explorer and go to a transaction detail screen and click on the link to open the BE and confirm that the change was picked up
 
 ### Manage Assets
-- [ ] Remove tether and confirm that it disappears from the wallet asset list, the send and receive screens and the swap options
+- [ ] Remove USDT and confirm that it disappears from the wallet asset list, the send and receive screens and the swap options.
+      
+- [ ] Remove USDT and check the Send screens for Bitcoin and LBTC, and confirm that the 'USDt Internal Send' button is gone from the Send > LBTC screen.
+      
+- [ ] Add USDt back to managed assets and confirm the 'USDt Internal Send' button reappears on the Send > LBTC screen.
 
 - [ ] Add a non default asset (like pegX) and confirm that it appears in the wallet asset list and the send and receieve screens.
 
