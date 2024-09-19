@@ -8,7 +8,6 @@ to quickly identify any major issues or showstoppers early in the testing proces
 - [ ] 🚨🚨 A big issue to look out for on upgrading aqua versions is that if the user is logged in on version A, when upgrading to version B they ARE NOT kicked out and have to enter their seed again. Some users won't have their seed backed up and if this happens they will lose their sats! 🚨🚨
 
 ## HOME SCREEN
-- [ ] From Home Screen, tap Layer Two, then Send > On Send Address Screen header you should see new Layer Two icon and title should be Layer Two.
       
 ## AUTH
 - [ ] Test Biometric On/Off
@@ -21,11 +20,6 @@ to quickly identify any major issues or showstoppers early in the testing proces
 - [ ] Restore existing wallet with balances
     - [ ] Verify Balances
     - [ ] Verify Tx Details
-
-### Home screen
-- [ ] Verify that the Layer Two logo is updated
-![image](https://github.com/user-attachments/assets/03cb57ec-7c9d-4d56-8041-5dd8b13742c4)
-
 
 ## SEND
 ### QRSCANNER
@@ -77,7 +71,6 @@ to quickly identify any major issues or showstoppers early in the testing proces
 - [ ] Send All
 - [ ] Fiat-denominated
 
-
 ## RECEIVE
 ### BITCOIN
 - [ ] Address generation
@@ -99,7 +92,7 @@ to quickly identify any major issues or showstoppers early in the testing proces
 - [ ] NEED TO test claims with a variety of delays to mimic real world usage
   - [ ] Create invoice, background app for > 15min, pay invoice from another app, foreground app and verify that claim function runs and receive is completed.
   - [ ] Create invoice, close app. Pay invoice from another app. Open Aqua and verify that claim function runs and receive is completed.
-  - [ ]  From Send Asset Grid tap Lightning > On Send Address Screen header you should see Lightning icon and title should be Lightning
+  - [ ] From Send Asset Grid tap Lightning > On Send Address Screen header you should see Lightning icon and title should be Lightning
 
 ### USDT
 - [ ] Switch between networks is smooth and resets state
@@ -114,7 +107,6 @@ to quickly identify any major issues or showstoppers early in the testing proces
 
 ### OTHER
 - [ ] Regular Receive for any other asset
-
 
 ## SWAPS
 - [ ] Test Swap LBTC <> USDT
@@ -143,18 +135,15 @@ to quickly identify any major issues or showstoppers early in the testing proces
 - [ ] Bitcoin Chip - ?
 - [ ] TOS/Privacy/Social Links
 
-
-## MANAGED ASSETS
-- [ ] Verify that the Layer Two logo is updated ![image](https://github.com/user-attachments/assets/9f0916f4-0a9d-4b65-a590-625a71a39cc4)
-
-
-MEXAS
+##  MEXAS/DEPIX Stablecoins
 - [ ] Settings > Manage Assets > Add More Assets. Verify Mexas is available to add. Add and verify it is not on Home Screen and Send/Receive Grids
 - [ ] Test Send and Receive from external wallet successfully. Verify txs show in tx history for Mexas
 
 
 ##  MARKETPLACE
 - [ ] Test Meld flow
+- [ ] Test Beaver Bitcoin shows if Region is CA
+- [ ] Test Pocket Bitcoin shows if Region is Europe (not all but most EU countries)
 
 
 ## VPN + BAD/NO NETWORK CONDITIONS
