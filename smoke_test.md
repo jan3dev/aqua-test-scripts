@@ -8,6 +8,11 @@ to quickly identify any major issues or showstoppers early in the testing proces
 - [ ] 🚨🚨 A big issue to look out for on upgrading aqua versions is that if the user is logged in on version A, when upgrading to version B they ARE NOT kicked out and have to enter their seed again. Some users won't have their seed backed up and if this happens they will lose their sats! 🚨🚨
 
 ## HOME SCREEN
+### TOTAL BALANCE
+- [ ] On first app open wallet header shows total balance if balance > 0
+- [ ] In settings, change reference currency and total balance currency should update accordingly
+- [ ] Tap on total balance amount and wallet header should switch to btc price
+- [ ] Close and re-open the app, last choice should be remembered and btc price shown by default
       
 ## AUTH
 - [ ] Test Biometric On/Off
