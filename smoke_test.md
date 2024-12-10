@@ -146,9 +146,11 @@ to quickly identify any major issues or showstoppers early in the testing proces
 
 
 ##  MARKETPLACE
+- [ ] Verify price feeds for marketplace cards show
 - [ ] Test Meld flow
 - [ ] Test Beaver Bitcoin shows if Region is CA
 - [ ] Test Pocket Bitcoin shows if Region is Europe (not all but most EU countries)
+- [ ] Test BTC Direct shows if Region is Europe (not all but most EU countries)
 
 
 ## VPN + BAD/NO NETWORK CONDITIONS
