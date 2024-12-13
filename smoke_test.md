@@ -79,10 +79,12 @@ to quickly identify any major issues or showstoppers early in the testing proces
 ## RECEIVE
 ### BITCOIN
 - [ ] Address generation
+- [ ] Generate new address with a dedicated button
 - [ ] While setting amount, check fiat -> sats conversion is correct
 - [ ] If amount is set, check it's encoded correctly in QR
 
 ### LBTC
+- [ ] Generate new address with a dedicated button
 - [ ] While setting amount, check fiat -> sats conversion is correct
 - [ ] If amount is entered, the text displayed and copy button don’t include the BIP21, but Share and QR include the full bip21 with AMOUNT and ASSETID
     - [ ] Also test fiat-demoninated is converted to lbtc in bip21
