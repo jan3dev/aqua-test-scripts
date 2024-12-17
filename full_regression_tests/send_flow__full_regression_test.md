@@ -22,6 +22,9 @@ TODO: This was copied from the smoke test to start the folder - needs to be fill
     - [ ] Test from a variety of servers, large and small. A list to start: Blink, Coinos, Alby, Strike, Wallet of Satoshi
     - [ ] When the lightning address is entered on the Send Address Screen, the Continue button should enable once text passing a basic email regex is entered. This has not entered the lightning address resolution flow yet, the initial validation is just a basic email regex.
 
+- [ ] MoneyBadger Lightning Address
+    - [ ] We have a special integration with MoneyBadger that allows paying lightning to certain merchants in S Africa. They set up an endpoint to create test QRs here: https://api.circuit.cryptoconvert.co.za/test/qr.png?amountCents=30000&completion=confirm
+
 - [ ] LNURL
     - [ ] Scan LNURLp with fixed amount, should resolve amount in Send Amount field and should be uneditable
     - [ ] Scan LNURLp with min/max amounts, should override boltz min/max in Send Amount Screen with LNURLp min/max IF higher than boltz min and/or lower than boltz max
